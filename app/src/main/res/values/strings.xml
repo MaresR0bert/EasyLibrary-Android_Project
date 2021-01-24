@@ -1,0 +1,82 @@
+<resources>
+    <string name="app_name">Easy Library</string>
+    <string name="title">Title: </string>
+    <string name="author">Author: </string>
+    <string name="publish_date">Publish Date: </string>
+    <string name="rating">Rating: </string>
+    <string name="genre">Genre: </string>
+    <string name="noPages">Number of Pages: </string>
+    <string name="cancel">Cancel</string>
+    <string name="savebook">Save Book</string>
+    <string name="reading_status">Reading Status: </string>
+    <string name="read">Read</string>
+    <string name="not_read">Not Read</string>
+    <string name="have_you_read_this_book">Have you read this book?</string>
+    <string name="addImage">Add image</string>
+    <string name="placeholder">placeholder</string>
+    <string name="my_library">My Library</string>
+    <string name="see_the_newest_books">See The Newest Books</string>
+    <string name="nearest_libraries">Nearest Libraries</string>
+    <string-array name="add_book_genre">
+        <item>Poetry</item>
+        <item>Fiction</item>
+        <item>History</item>
+        <item>Science</item>
+        <item>Theatre</item>
+        <item>Biography</item>
+    </string-array>
+    <string name="prompt_email">Username</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome! "</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="beta_version_login_with_any_credentials_example_user_user1234_pass_1234567">BETA VERSION: LOGIN WITH ANY CREDENTIALS EXAMPLE: USER: USER1234; PASS:1234567</string>
+    <string name="newest_books">"Top Newest Books"</string>
+    <string name="addbook">"Add Book"</string>
+    <string name="left_to_read">"Left to read: "</string>
+    <string name="pages">" pages"</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="name">Name:</string>
+    <string name="numberOfPublishedBooks">Books published:</string>
+    <string name="bestSellingBookName">Best selling book:</string>
+    <string name="saveAuthor">Save</string>
+    <string name="addAuthor">Add author</string>
+    <string name="my_fav_authors">My Favorite Authors</string>
+    <string name="languageHint">Language:</string>
+    <string name="activity_login_title">Log in</string>
+    <string name="et_name_error">Enter author\'s name!</string>
+    <string name="et_nr_published_books_error">Enter number of published books!</string>
+    <string name="et_best_selling_book_error">Enter best selling book name!</string>
+    <string name="et_author_error">Enter author!</string>
+    <string name="et_title_error">Enter title!</string>
+    <string name="et_date_error">Enter date of publishing!</string>
+    <string name="et_no_pages">Enter Number of Pages!</string>
+    <string name="label_no_pages">Number of Pages: </string>
+    <string name="label_genre">"Genre: "</string>
+    <string name="label_author">"Author: "</string>
+    <string name="label_title">"Title: "</string>
+    <string name="label_name">"Name: "</string>
+    <string name="label_no_published_books">"Books published: "</string>
+    <string name="label_best_selling_book">"Best selling book: "</string>
+    <string name="label_published_date">"Publish Date: "</string>
+    <string name="label_rating">"Rating: "</string>
+    <string name="label_read">"Reading status: "</string>
+    <string name="plot_title">NoPages of Book Genres</string>
+    <string name="statitics">See your statistics</string>
+    <string name="chart_statistics">Chart Statistics</string>
+    <string name="favourite_authors">Favourite Authors</string>
+    <string name="delete_book_dialog_title">Confirm deletion</string>
+    <string name="delete_book_dialog_message">Sure you want to delete the item?</string>
+    <string name="delete_book_dialog_message_negative">Nothing changed!!</string>
+    <string name="delete_book_dialog_message_positive">"The book was deleted: "</string>
+    <string-array name="language">
+        <item>English</item>
+        <item>Romanian</item>
+        <item>French</item>
+        <item>Chinese</item>
+        <item>Russian</item>
+    </string-array>
+</resources>

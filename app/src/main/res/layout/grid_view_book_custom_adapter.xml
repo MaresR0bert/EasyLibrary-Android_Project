@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    >
+
+    <ImageView
+        android:id="@+id/gridViewBookCover"
+        android:layout_width="157dp"
+        android:layout_height="173dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="6dp"
+        android:background="#000000"
+        android:padding="1dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/sample_books" />
+
+    <TextView
+        android:id="@+id/gvTitle"
+        android:layout_width="224dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/gridViewBookCover"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/gvAuthor"
+        android:layout_width="224dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:theme="@style/TextViewShowAdaptorStyle"
+        app:layout_constraintStart_toEndOf="@+id/gridViewBookCover"
+        app:layout_constraintTop_toBottomOf="@+id/gvTitle" />
+
+    <TextView
+        android:id="@+id/gvPages"
+        android:layout_width="224dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:theme="@style/TextViewShowAdaptorStyle"
+        app:layout_constraintStart_toEndOf="@+id/gridViewBookCover"
+        app:layout_constraintTop_toBottomOf="@+id/gvAuthor" />
+
+    <TextView
+        android:id="@+id/gvGenre"
+        android:layout_width="224dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:theme="@style/TextViewShowAdaptorStyle"
+        app:layout_constraintStart_toEndOf="@+id/gridViewBookCover"
+        app:layout_constraintTop_toBottomOf="@+id/gvPages" />
+
+    <RatingBar
+        android:id="@+id/gvRatingBar"
+        android:layout_width="239dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:theme="@style/RatingBarGolden"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/gridViewBookCover"
+        app:layout_constraintTop_toBottomOf="@+id/gvGenre" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

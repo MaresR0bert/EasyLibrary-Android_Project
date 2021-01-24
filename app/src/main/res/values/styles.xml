@@ -1,0 +1,44 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/PowerBlue</item>
+        <item name="colorPrimaryDark">@color/LightSteelBlue</item>
+        <item name="colorAccent">@color/PowerBlue</item>
+    </style>
+    <style name="RatingBarGolden" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/DarkBlue</item>
+        <item name="colorControlActivated">@color/duskYellow</item>
+    </style>
+    <style name="TextAppearance.AppCompat.Widget.ActionBar.Title" parent="@android:style/TextAppearance">
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:textColor">@color/WhiteSmoke</item>
+        <item name="android:textSize">30sp</item>
+    </style>
+    <style name="CustomBlueButton" parent= "TextAppearance.AppCompat.Button">
+        <item name="android:textColor">@color/WhiteSmoke</item>
+        <item name="android:background">@drawable/sampleshape</item>
+        <item name="android:textColorHighlight">@color/White</item>
+        <item name="android:textColorHint">@color/White</item>
+        <item name="android:textColorLink">@color/White</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">4dp</item>
+    </style>
+    <style name="TextViewShowAdaptorStyle" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">sans-serif-smallcaps</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:layout_width">260dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSelectHandleLeft">@id/none</item>
+        <item name="android:textSelectHandleRight">@id/none</item>
+        <item name="android:textSelectHandle">@id/none</item>
+        <item name="android:textEditPasteWindowLayout">@id/none</item>
+        <item name="android:textEditNoPasteWindowLayout">@id/none</item>
+        <item name="android:textEditSidePasteWindowLayout">@id/none</item>
+        <item name="android:textEditSideNoPasteWindowLayout">@id/none</item>
+        <item name="android:textCursorDrawable">@id/none</item>
+        <item name="android:textEditSuggestionItemLayout">@id/none</item>
+        <item name="android:textColor">@color/Black</item>
+    </style>
+</resources>

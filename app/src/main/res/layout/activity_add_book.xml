@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/addactivbackground"
+        tools:context="com.project.library.AddBookActivity">
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="68dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="32dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="@string/title"
+            android:textAlignment="viewEnd"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editTextTitle"
+            android:layout_width="235dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.033"
+            app:layout_constraintStart_toEndOf="@+id/textViewTitle"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewAuthor"
+            android:layout_width="68dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="32dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="@string/author"
+            android:textAlignment="textEnd"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTitle" />
+
+        <EditText
+            android:id="@+id/editTextAuthor"
+            android:layout_width="235dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.016"
+            app:layout_constraintStart_toEndOf="@+id/textViewAuthor"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTitle" />
+
+        <TextView
+            android:id="@+id/textViewPublishDate"
+            android:layout_width="89dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="@string/publish_date"
+            android:textAlignment="viewEnd"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewAuthor" />
+
+        <EditText
+            android:id="@+id/editTextPublishDate"
+            android:layout_width="235dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="MM/dd/yyyy"
+            android:inputType="date"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/textViewPublishDate"
+            app:layout_constraintTop_toBottomOf="@+id/editTextAuthor" />
+
+        <TextView
+            android:id="@+id/textViewRating"
+            android:layout_width="72dp"
+            android:layout_height="19dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="95dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="@string/rating"
+            android:textAlignment="viewEnd"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewNoPages" />
+
+        <TextView
+            android:id="@+id/textViewGenre"
+            android:layout_width="73dp"
+            android:layout_height="16dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="32dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="@string/genre"
+            android:textAlignment="viewEnd"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPublishDate" />
+
+        <Spinner
+            android:id="@+id/spinnerGenre"
+            android:layout_width="235dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="17dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/textViewGenre"
+            app:layout_constraintTop_toBottomOf="@+id/editTextPublishDate" />
+
+        <TextView
+            android:id="@+id/textViewNoPages"
+            android:layout_width="67dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="26dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="@string/noPages"
+            android:textAlignment="viewEnd"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewGenre" />
+
+        <Button
+            android:id="@+id/buttonSave"
+            android:layout_width="121dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/sampleshape"
+            android:fontFamily="casual"
+            android:text="@string/savebook"
+            android:textSize="20sp"
+            android:theme="@style/CustomBlueButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonAddImage" />
+
+        <Button
+            android:id="@+id/buttonCancel"
+            android:layout_width="93dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="52dp"
+            android:layout_marginEnd="64dp"
+            android:background="@drawable/sampleshape"
+            android:fontFamily="casual"
+            android:text="@string/cancel"
+            android:textSize="20sp"
+            android:theme="@style/CustomBlueButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bookCover" />
+
+        <RatingBar
+            android:id="@+id/ratingBar2"
+            android:layout_width="235dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="16dp"
+            android:theme="@style/RatingBarGolden"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.078"
+            app:layout_constraintStart_toEndOf="@+id/textViewRating"
+            app:layout_constraintTop_toBottomOf="@+id/switchRead" />
+
+        <Switch
+            android:id="@+id/switchRead"
+            android:layout_width="235dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="@string/have_you_read_this_book"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.664"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextNoPages" />
+
+        <EditText
+            android:id="@+id/editTextNoPages"
+            android:layout_width="235dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.233"
+            app:layout_constraintStart_toEndOf="@+id/textViewNoPages"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerGenre" />
+
+        <Button
+            android:id="@+id/buttonAddImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="60dp"
+            android:fontFamily="casual"
+            android:text="@string/addImage"
+            android:textSize="20sp"
+            android:theme="@style/CustomBlueButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewRating"
+            android:background="@drawable/sampleshape"/>
+
+        <ImageView
+            android:id="@+id/bookCover"
+            android:layout_width="71dp"
+            android:layout_height="77dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="68dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.882"
+            app:layout_constraintStart_toEndOf="@+id/buttonAddImage"
+            app:layout_constraintTop_toBottomOf="@+id/ratingBar2"
+            app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
